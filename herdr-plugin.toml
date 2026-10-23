@@ -1,0 +1,18 @@
+id = "stash"
+name = "Herdr Stash"
+version = "0.1.0"
+min_herdr_version = "0.8.0"
+description = "Hide a workspace (save layout, then close) and bring all hidden workspaces back."
+platforms = ["linux", "macos"]
+
+[[actions]]
+id = "hide"
+title = "Hide current workspace"
+contexts = ["workspace"]
+command = ["python3", "stash.py", "hide"]
+
+[[actions]]
+id = "restore"
+title = "Restore hidden workspaces"
+contexts = ["workspace"]
+command = ["python3", "stash.py", "restore"]

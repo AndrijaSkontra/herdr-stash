@@ -1,0 +1,6 @@
+# Copy to the plugin config directory (see `herdr plugin config-dir stash`)
+# or let the plugin create a default on first run.
+
+# When true, restore will re-run captured foreground commands with
+# `herdr pane run`. Default is false: only layout and cwds are restored.
+rerun_commands = false
